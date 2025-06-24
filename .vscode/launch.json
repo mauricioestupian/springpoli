@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-SpmysqlApplication<spmysql>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.poli.spmysql.SpmysqlApplication",
+      "projectName": "spmysql",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

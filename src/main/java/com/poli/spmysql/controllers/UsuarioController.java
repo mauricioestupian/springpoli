@@ -76,11 +76,6 @@ public class UsuarioController {
     @Autowired
     private UsuarioServices usuarioservice;
 
-    @GetMapping("/usuarios1")
-    public ResponseEntity<List<UsuarioDto>> getUsuarios() {
-        return new ResponseEntity<>(usuarioservice.getUsuarios(), HttpStatus.OK);
-    }
-
     @GetMapping("/inicio")
     public String Inicio2() {
         return "Hola Mundo " + "desde Spring Boot";
@@ -90,6 +85,11 @@ public class UsuarioController {
     public ResponseEntity<UsuarioDto> saveUsuario(@RequestBody UsuarioDto usuarioDto) {
         return new ResponseEntity<>(usuarioservice.save(usuarioDto),
                 HttpStatus.CREATED);
+    }
+
+    @GetMapping("/usuarios1")
+    public ResponseEntity<List<UsuarioDto>> getUsuarios() {
+        return new ResponseEntity<>(usuarioservice.getUsuarios(), HttpStatus.OK);
     }
 
     @GetMapping("/usuario/{usuarioId}")

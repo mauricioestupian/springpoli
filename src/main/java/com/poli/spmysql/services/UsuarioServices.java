@@ -6,9 +6,9 @@ import com.poli.spmysql.dto.UsuarioDto;
 
 public interface UsuarioServices {
 
-    public List<UsuarioDto> getUsuarios();
-
     public UsuarioDto save(UsuarioDto usuarioDto);
+
+    public List<UsuarioDto> getUsuarios();
 
     public UsuarioDto getUsuario(Integer usuarioid);
 

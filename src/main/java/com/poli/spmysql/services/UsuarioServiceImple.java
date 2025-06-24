@@ -16,7 +16,6 @@ public class UsuarioServiceImple implements UsuarioServices {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-    @Autowired
     private UsuarioMapper usuarioMapper;
 
     @Override
